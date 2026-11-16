@@ -1,3 +1,5 @@
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/new/template/valkey-3?utm_medium=integration&utm_source=button&utm_campaign=valkey)
+
 # Valkey on Railway
 
 A Railway template for [Valkey](https://valkey.io), the BSD-licensed, Redis-compatible key-value store from the Linux Foundation. It is meant as a cache, queue or session store for apps you already run on Railway, and it is a drop-in replacement for Railway's Redis: it exposes the same `REDIS_URL`, `REDISHOST`, `REDISPORT`, `REDISUSER` and `REDISPASSWORD` variables.
