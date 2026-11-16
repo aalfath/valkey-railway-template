@@ -7,7 +7,7 @@ COPY --chmod=0755 railway-start.sh /usr/local/bin/railway-start.sh
 COPY --chmod=0755 valkey-health.sh /usr/local/bin/valkey-health.sh
 
 # Valkey port (private network) and the HTTP health check port (PORT).
+# Data lives in /data: mount a Railway volume there (Railway rejects VOLUME).
 EXPOSE 6379 8080
-VOLUME /data
 
 ENTRYPOINT ["tini", "--", "/usr/local/bin/railway-start.sh"]
